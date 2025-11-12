@@ -4,6 +4,9 @@ set -ouex pipefail
 
 dnf5 -y install \
         chezmoi \
-        python-pip
+        python-pip \
+        docker-cli \
+        containerd \
+        docker-compose
 
 systemctl enable podman.socket
