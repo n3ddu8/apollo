@@ -14,10 +14,11 @@ curl -L -o devpod "https://github.com/loft-sh/devpod/releases/latest/download/de
   && install -c -m 0755 devpod /usr/local/bin \
   && rm -f devpod
 
-dnf5 -y copr enable ublue-os/packages
+dnf5 -y copr enable ublue-os/packages ublue-os/staging
 dnf5 -y install \
         ublue-brew \
-        ublue-os-update-services
-dnf5 -y copr disable ublue-os/packages
+        ublue-os-update-services \
+        topgrade
+dnf5 -y copr disable ublue-os/packages ublue-os/staging
 
 systemctl enable podman.socket
