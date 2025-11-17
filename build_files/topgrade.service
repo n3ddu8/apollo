@@ -1,0 +1,8 @@
+[Unit]
+Description=Run Topgrade system upgrade
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/topgrade --yes
+StandardOutput=journal
+StandardError=journal

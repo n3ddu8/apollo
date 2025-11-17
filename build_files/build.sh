@@ -25,3 +25,4 @@ dnf5 -y copr disable ublue-os/packages
 dnf5 -y copr disable ublue-os/staging
 
 systemctl enable podman.socket
+systemctl enable topgrade.timer

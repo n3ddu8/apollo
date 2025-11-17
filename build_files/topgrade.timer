@@ -1,0 +1,9 @@
+[Unit]
+Description=Weekly Topgrade upgrade
+
+[Timer]
+OnCalendar=Fri *-*-* 02:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
