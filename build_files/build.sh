@@ -19,7 +19,8 @@ dnf5 -y copr enable ublue-os/staging
 dnf5 -y install \
         ublue-brew \
         ublue-os-update-services \
-        topgrade
+        topgrade \
+        fwupd
 dnf5 -y copr disable ublue-os/packages
 dnf5 -y copr disable ublue-os/staging
 
